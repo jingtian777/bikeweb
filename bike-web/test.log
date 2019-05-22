@@ -1,0 +1,1333 @@
+2019/05/15-00:00 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-00:00 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-00:00 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-00:00 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-00:00 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-00:00 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-00:03 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-00:03 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-00:03 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-00:04 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 11345 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-00:04 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-00:04 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-00:04 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-00:04 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-00:04 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-00:04 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1606 ms
+2019/05/15-00:04 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-00:04 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-00:04 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.849 seconds (JVM running for 3.242)
+2019/05/15-00:04 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-00:04 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-00:04 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-00:05 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-00:05 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-00:05 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-00:05 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-00:05 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-00:05 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-00:05 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-00:05 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-00:05 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-00:05 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-00:05 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-00:05 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-00:05 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-00:05 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-00:05 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-00:05 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=1 order by number 
+2019/05/15-00:05 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-00:05 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 0
+2019/05/15-00:06 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-00:06 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-00:06 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-00:06 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 11368 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-00:06 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-00:06 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-00:06 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-00:06 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-00:06 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-00:06 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1713 ms
+2019/05/15-00:06 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-00:06 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-00:06 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.264 seconds (JVM running for 3.804)
+2019/05/15-00:06 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-00:06 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-00:06 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-00:06 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-00:06 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-00:06 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-00:06 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-00:06 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-00:06 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-00:06 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-00:06 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-00:06 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-00:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-00:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-00:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-00:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-00:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-00:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-00:06 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-00:06 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-00:06 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:13 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:13 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:13 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:13 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 11935 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:13 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:13 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:13 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:13 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:13 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:13 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1663 ms
+2019/05/15-01:13 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:13 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:13 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.235 seconds (JVM running for 3.751)
+2019/05/15-01:13 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:13 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:13 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:13 [http-nio-8082-exec-6] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:13 [http-nio-8082-exec-6] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:13 [http-nio-8082-exec-6] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:13 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:13 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:13 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:13 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:13 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:13 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:13 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:13 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:13 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:13 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:13 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:13 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:13 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:13 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:13 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:14 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:14 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:14 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:14 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 11947 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:14 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:14 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:14 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:14 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:14 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:14 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1499 ms
+2019/05/15-01:14 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:14 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:14 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.929 seconds (JVM running for 3.437)
+2019/05/15-01:14 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:14 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:14 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:14 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:14 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:14 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:14 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:14 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:14 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:14 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:14 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:14 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:14 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:14 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:14 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:14 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:14 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:14 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:14 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:14 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:14 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:16 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:16 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:16 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:16 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 11967 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:16 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:16 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:16 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:16 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:16 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:16 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1467 ms
+2019/05/15-01:16 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:16 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:16 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.994 seconds (JVM running for 3.504)
+2019/05/15-01:16 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:16 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:16 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:16 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:16 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:16 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:16 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:16 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:16 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:16 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:16 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:16 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:16 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:16 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:16 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:16 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:16 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:16 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:16 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:16 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:16 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:18 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:18 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:18 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:18 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 11983 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:18 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:18 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:18 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:18 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:18 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:18 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1847 ms
+2019/05/15-01:18 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:18 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:18 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.488 seconds (JVM running for 4.054)
+2019/05/15-01:18 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:18 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:18 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:18 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:18 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:18 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:18 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:18 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:18 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:18 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:18 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:18 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:18 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:18 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:18 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:18 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:18 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:18 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:18 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:18 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:18 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:19 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:19 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:19 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:29 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:29 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:29 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:29 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12120 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:29 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:29 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:29 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:29 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:29 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:29 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1465 ms
+2019/05/15-01:29 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:29 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:29 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.941 seconds (JVM running for 3.444)
+2019/05/15-01:31 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:31 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:31 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:31 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:31 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:31 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:31 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:31 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:31 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:31 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:31 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:31 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:32 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:32 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:32 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:32 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12144 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:32 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:32 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:32 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:32 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:32 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:32 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1496 ms
+2019/05/15-01:32 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:32 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:32 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.166 seconds (JVM running for 3.666)
+2019/05/15-01:33 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:33 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:33 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:33 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:33 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:33 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:33 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:33 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:33 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:33 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:33 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:33 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:33 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:33 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:33 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:33 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12154 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:33 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:33 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:33 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:33 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:33 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:33 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1515 ms
+2019/05/15-01:33 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:33 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:33 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.941 seconds (JVM running for 3.451)
+2019/05/15-01:33 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:33 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:33 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:34 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:34 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:34 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:34 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:34 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:34 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:34 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:34 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:34 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:34 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:34 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:34 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:34 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12166 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:34 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:34 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:34 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:34 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:34 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:34 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1494 ms
+2019/05/15-01:34 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:34 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:34 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.989 seconds (JVM running for 3.492)
+2019/05/15-01:34 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:34 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:34 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:34 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:34 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:34 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:34 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:34 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:34 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:34 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:34 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:34 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:34 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:35 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:35 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:35 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:35 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12176 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:35 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:35 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:35 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:35 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:35 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:35 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1639 ms
+2019/05/15-01:35 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:35 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:35 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.123 seconds (JVM running for 3.625)
+2019/05/15-01:35 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:35 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:35 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:35 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=qweqwe, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:35 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:35 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:35 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:35 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:35 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:35 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:35 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:35 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:35 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- 密码不正确
+2019/05/15-01:35 [http-nio-8082-exec-5] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=qweqwe, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:35 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:35 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:35 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:35 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:35 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:35 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:35 [http-nio-8082-exec-5] ERROR com.example.bikeweb.controller.UserAccess- 密码不正确
+2019/05/15-01:35 [http-nio-8082-exec-6] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:35 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:35 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:35 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:35 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:35 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:35 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:35 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:35 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:35 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:35 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:35 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:35 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:37 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:37 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:37 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:37 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12191 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:37 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:37 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:37 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:37 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:37 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:37 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1532 ms
+2019/05/15-01:37 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:37 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:37 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.397 seconds (JVM running for 3.91)
+2019/05/15-01:37 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:37 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:37 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:37 [http-nio-8082-exec-4] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:37 [http-nio-8082-exec-4] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:37 [http-nio-8082-exec-5] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:37 [http-nio-8082-exec-4] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:37 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:37 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:37 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:37 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:37 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:37 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:37 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:37 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:37 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:37 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:37 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:37 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:37 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:37 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:37 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:37 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:37 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:37 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:38 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:38 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:38 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:38 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12205 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:38 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:38 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:38 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:38 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:38 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:38 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1612 ms
+2019/05/15-01:38 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:38 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:38 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.097 seconds (JVM running for 3.651)
+2019/05/15-01:38 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:38 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:38 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:38 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:38 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:38 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:38 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:38 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:38 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:38 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:38 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:38 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:38 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:38 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:38 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:38 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:38 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:38 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:40 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:40 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:40 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:40 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12222 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:40 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:40 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:40 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:40 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:40 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:40 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1489 ms
+2019/05/15-01:40 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:40 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:40 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.921 seconds (JVM running for 3.461)
+2019/05/15-01:40 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:40 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:40 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:40 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:40 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:40 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:40 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:40 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:40 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:44 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:44 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:44 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:44 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12252 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:44 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:44 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:44 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:44 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:44 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:44 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1692 ms
+2019/05/15-01:44 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:44 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:44 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.178 seconds (JVM running for 3.698)
+2019/05/15-01:44 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:44 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:44 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:44 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:44 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:44 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:44 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:44 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:44 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:44 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:44 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:44 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:44 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:44 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:44 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:44 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:44 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:44 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:45 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:45 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:45 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:45 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12268 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:45 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:45 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:45 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:45 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:45 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:45 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1850 ms
+2019/05/15-01:45 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:45 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:45 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.414 seconds (JVM running for 3.993)
+2019/05/15-01:46 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:46 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12283 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:46 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:46 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:46 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:46 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1574 ms
+2019/05/15-01:46 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:46 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.991 seconds (JVM running for 3.498)
+2019/05/15-01:46 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:46 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:46 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:46 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:46 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:46 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:46 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:46 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:46 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:46 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:46 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:46 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:46 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:46 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:46 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:46 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:46 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:46 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:46 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:46 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:46 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:51 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:51 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:51 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:51 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12336 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:51 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:51 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:51 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:51 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:51 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1504 ms
+2019/05/15-01:51 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:51 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.001 seconds (JVM running for 3.522)
+2019/05/15-01:51 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:51 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:51 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-01:51 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:51 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:51 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:51 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:51 [http-nio-8082-exec-4] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:51 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:51 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:51 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:51 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:51 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:51 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:51 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:51 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:51 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:51 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:51 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:51 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:51 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:51 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:55 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:55 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:55 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:55 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12382 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:55 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:55 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:55 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:55 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:55 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1550 ms
+2019/05/15-01:55 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:55 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.971 seconds (JVM running for 3.458)
+2019/05/15-01:55 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:55 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:55 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-01:55 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-01:55 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-01:55 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-01:55 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:55 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-01:55 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-01:55 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-01:55 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-01:55 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-01:55 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-01:55 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-01:55 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-01:55 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-01:55 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-01:55 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-01:55 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-01:55 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-01:55 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-01:59 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:59 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-01:59 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-01:59 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12422 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-01:59 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-01:59 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-01:59 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-01:59 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-01:59 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-01:59 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1528 ms
+2019/05/15-01:59 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-01:59 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-01:59 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.963 seconds (JVM running for 3.467)
+2019/05/15-01:59 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-01:59 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-01:59 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-02:00 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-02:00 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-02:00 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-02:00 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:00 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-02:00 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-02:00 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-02:00 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-02:00 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-02:00 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-02:00 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-02:00 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-02:00 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:00 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-02:00 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-02:00 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP with PID 12435 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-02:00 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-02:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-02:00 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-02:00 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-02:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-02:00 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1555 ms
+2019/05/15-02:00 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-02:00 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.113 seconds (JVM running for 3.603)
+2019/05/15-02:00 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-02:00 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-02:00 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-02:00 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-02:00 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-02:00 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-02:00 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-02:00 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:00 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-02:00 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-02:00 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-02:00 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-02:00 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-02:00 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-02:00 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-02:00 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-02:29 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:29 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-02:29 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-02:29 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 12699 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-02:29 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-02:29 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-02:29 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-02:29 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-02:29 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-02:29 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1448 ms
+2019/05/15-02:29 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:29 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-02:29 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.924 seconds (JVM running for 3.477)
+2019/05/15-02:29 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-02:29 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-02:29 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-02:29 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-02:29 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-02:29 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-02:29 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:29 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-02:29 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-02:29 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-02:29 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-02:29 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-02:29 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:29 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-02:29 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-02:29 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-02:29 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-02:29 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-02:30 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-02:30 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-02:30 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-02:31 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:31 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-02:31 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-02:31 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 12720 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-02:31 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-02:31 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-02:31 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-02:31 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-02:31 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-02:31 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1680 ms
+2019/05/15-02:31 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:31 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-02:31 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.251 seconds (JVM running for 3.809)
+2019/05/15-02:31 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-02:31 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-02:31 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-02:31 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-02:31 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-02:31 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-02:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-02:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-02:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-02:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-02:31 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-02:31 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:31 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-02:31 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-02:31 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-02:31 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-02:31 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-02:32 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:32 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-02:32 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-02:32 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 12731 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-02:32 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-02:32 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-02:32 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-02:32 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-02:32 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-02:32 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1629 ms
+2019/05/15-02:32 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:32 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-02:32 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.129 seconds (JVM running for 3.634)
+2019/05/15-02:32 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-02:32 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-02:32 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-02:32 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-02:32 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-02:32 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-02:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-02:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-02:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-02:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-02:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-02:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-02:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-02:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-02:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 18
+2019/05/15-02:32 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- ==>  Preparing: select * from tb_bike where number = ? 
+2019/05/15-02:32 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- ==> Parameters: 1000000001(String)
+2019/05/15-02:32 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- <==      Total: 1
+2019/05/15-02:32 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- ==>  Preparing: update tb_bike set id=? ,status=? where id=? 
+2019/05/15-02:32 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- ==> Parameters: 1(Long), 1(Integer), 1(Long)
+2019/05/15-02:32 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- <==    Updates: 1
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-02:32 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-02:33 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-02:33 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-02:33 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-11:07 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMBP-2eed with PID 717 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-11:07 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-11:07 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-11:07 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-11:07 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-11:07 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-11:07 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1378 ms
+2019/05/15-11:07 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:07 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-11:07 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.373 seconds (JVM running for 3.99)
+2019/05/15-11:08 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-11:08 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-11:08 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 9 ms
+2019/05/15-11:08 [http-nio-8082-exec-7] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-11:08 [http-nio-8082-exec-7] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-11:08 [http-nio-8082-exec-7] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-11:08 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-11:29 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:29 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:29 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:30 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:30 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:30 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:40 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:40 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-11:40 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-11:40 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 792 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-11:40 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-11:40 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-11:40 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-11:40 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-11:40 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-11:40 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1711 ms
+2019/05/15-11:40 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:40 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-11:40 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.409 seconds (JVM running for 4.273)
+2019/05/15-11:40 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-11:40 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-11:40 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 5 ms
+2019/05/15-11:40 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-11:40 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-11:40 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-11:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-11:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-11:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-11:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-11:40 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-11:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-11:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-11:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-11:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-11:40 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-11:40 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:40 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:40 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:42 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:42 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-11:42 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-11:42 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 797 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-11:42 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-11:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-11:42 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-11:42 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-11:42 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-11:42 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1508 ms
+2019/05/15-11:42 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-11:42 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.011 seconds (JVM running for 3.532)
+2019/05/15-11:42 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-11:42 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-11:42 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-11:42 [http-nio-8082-exec-3] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-11:42 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-11:42 [http-nio-8082-exec-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-11:42 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:42 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-11:42 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-11:42 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-11:42 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-11:42 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-11:42 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:42 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-11:42 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-11:42 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-11:42 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-11:42 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-11:42 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:42 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:42 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:43 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:43 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:43 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:43 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:43 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:43 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:45 [http-nio-8082-exec-1] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-11:45 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-11:45 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:45 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:45 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:45 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:45 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:45 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:46 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:46 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-11:46 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-11:46 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 807 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-11:46 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-11:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-11:46 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-11:46 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-11:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-11:46 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1417 ms
+2019/05/15-11:46 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-11:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-11:46 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.872 seconds (JVM running for 3.417)
+2019/05/15-11:47 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-11:47 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-11:47 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 9 ms
+2019/05/15-11:47 [http-nio-8082-exec-4] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-11:47 [http-nio-8082-exec-4] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-11:47 [http-nio-8082-exec-4] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-11:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-11:47 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:02 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:02 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-7] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=4, phone=null, password=null, name=珉源章, portrait=null, money=null, email=1341333432@qq.com, age=25, gender=0, permission=null, usednum=null, costsum=null)
+2019/05/15-12:02 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,name=? ,email=? ,age=? ,gender=? where id=? 
+2019/05/15-12:02 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), 珉源章(String), 1341333432@qq.com(String), 25(Integer), 0(Integer), 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-12:02 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:02 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:02 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:02 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 123456789(String)
+2019/05/15-12:02 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 1
+2019/05/15-12:02 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-12:02 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 123456789(String)
+2019/05/15-12:02 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 1
+2019/05/15-12:03 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-12:03 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-12:03 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 17
+2019/05/15-12:03 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- ==>  Preparing: select * from tb_bike where number = ? 
+2019/05/15-12:03 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- ==> Parameters: 1000000004(String)
+2019/05/15-12:03 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- <==      Total: 1
+2019/05/15-12:03 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- ==>  Preparing: update tb_bike set id=? ,status=? where id=? 
+2019/05/15-12:03 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- ==> Parameters: 10(Long), 1(Integer), 10(Long)
+2019/05/15-12:03 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- <==    Updates: 1
+2019/05/15-12:03 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-12:03 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-12:03 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 16
+2019/05/15-12:04 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:04 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:04 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:04 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:04 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:04 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:05 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-12:05 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-12:05 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 16
+2019/05/15-12:05 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:05 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:05 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:05 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:05 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:05 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:05 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:05 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:05 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:05 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:05 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:05 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:06 [http-nio-8082-exec-9] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=4, phone=null, password=null, name=章珉源, portrait=null, money=null, email=1341333432@qq.com, age=25, gender=0, permission=null, usednum=null, costsum=null)
+2019/05/15-12:06 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,name=? ,email=? ,age=? ,gender=? where id=? 
+2019/05/15-12:06 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), 章珉源(String), 1341333432@qq.com(String), 25(Integer), 0(Integer), 4(Long)
+2019/05/15-12:06 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-12:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:06 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-12:06 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-12:06 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-12:06 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-12:06 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-12:06 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-12:06 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-13:19 [http-nio-8082-exec-10] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-13:19 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-13:19 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-13:19 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-13:19 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-13:19 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-13:19 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-13:19 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-13:19 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-13:19 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-13:19 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-13:19 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-13:19 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-13:19 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-13:19 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-13:19 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 16
+2019/05/15-13:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m42s282ms).
+2019/05/15-14:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m49s995ms).
+2019/05/15-14:56 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-14:56 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-14:56 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-14:56 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 2619 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-14:56 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-14:56 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-14:56 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-14:56 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-14:56 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-14:56 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1999 ms
+2019/05/15-14:56 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-14:56 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-14:56 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 4.13 seconds (JVM running for 4.75)
+2019/05/15-14:56 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-14:56 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-14:56 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 11 ms
+2019/05/15-15:31 [http-nio-8082-exec-2] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=13413334321, password=123123, name=null, portrait=null, money=null, email=, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:31 [http-nio-8082-exec-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-15:31 [http-nio-8082-exec-2] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-15:31 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==>  Preparing: insert into tb_user (phone,password,email) values (?,?,?) 
+2019/05/15-15:31 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==> Parameters: 13413334321(String), 123123(String), (String)
+2019/05/15-15:31 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.insert- <==    Updates: 1
+2019/05/15-15:31 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- ==>  Preparing: select max(id) as id from tb_user 
+2019/05/15-15:31 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- ==> Parameters: 
+2019/05/15-15:31 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-4] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=13413334321, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 13413334321(String)
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:32 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 66(Long)
+2019/05/15-15:32 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:32 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 66(Long)
+2019/05/15-15:32 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-9] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:32 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-15:32 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-15:32 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:32 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:32 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-5] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=4, phone=null, password=null, name=zmy, portrait=null, money=null, email=1341333432@qq.com, age=22, gender=0, permission=null, usednum=null, costsum=null)
+2019/05/15-15:32 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,name=? ,email=? ,age=? ,gender=? where id=? 
+2019/05/15-15:32 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), zmy(String), 1341333432@qq.com(String), 22(Integer), 0(Integer), 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-15:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:32 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:33 [http-nio-8082-exec-1] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=4, phone=null, password=123456, name=zmy, portrait=null, money=null, email=1341333432@qq.com, age=22, gender=0, permission=null, usednum=null, costsum=null)
+2019/05/15-15:33 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,password=? ,name=? ,email=? ,age=? ,gender=? where id=? 
+2019/05/15-15:33 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), 123456(String), zmy(String), 1341333432@qq.com(String), 22(Integer), 0(Integer), 4(Long)
+2019/05/15-15:33 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-15:33 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:33 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:33 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:33 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:33 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:33 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-15:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 123456789(String)
+2019/05/15-15:33 [http-nio-8082-exec-4] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 1
+2019/05/15-15:33 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-15:33 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 1234567891(String)
+2019/05/15-15:33 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 0
+2019/05/15-15:34 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-15:34 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-15:34 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 16
+2019/05/15-15:34 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:34 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:34 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:34 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:34 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:34 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:42 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:42 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-15:42 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/05/15-15:42 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 2855 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-15:42 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-15:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-15:42 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-15:42 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-15:42 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-15:42 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1403 ms
+2019/05/15-15:42 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-15:42 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.148 seconds (JVM running for 3.619)
+2019/05/15-15:43 [http-nio-8082-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-15:43 [http-nio-8082-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-15:43 [http-nio-8082-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 8 ms
+2019/05/15-15:44 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:44 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 2875 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-15:44 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-15:44 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-15:44 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-15:44 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-15:44 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-15:44 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1452 ms
+2019/05/15-15:44 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:44 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-15:44 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 2.962 seconds (JVM running for 3.373)
+2019/05/15-15:45 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-15:45 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-15:45 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2019/05/15-15:46 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:46 [main] INFO  com.example.bikeweb.BikeWebApplication- Starting BikeWebApplication on cccdeMacBook-Pro.local with PID 2889 (/Users/hpzmy/test/demo/bike-web/target/classes started by hpzmy in /Users/hpzmy/test/demo/bike-web)
+2019/05/15-15:46 [main] INFO  com.example.bikeweb.BikeWebApplication- No active profile set, falling back to default profiles: default
+2019/05/15-15:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8082 (http)
+2019/05/15-15:46 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/05/15-15:46 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019/05/15-15:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring embedded WebApplicationContext
+2019/05/15-15:46 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1293 ms
+2019/05/15-15:46 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8082 (http) with context path '/bike-web'
+2019/05/15-15:46 [main] INFO  com.example.bikeweb.BikeWebApplication- Started BikeWebApplication in 3.044 seconds (JVM running for 3.577)
+2019/05/15-15:46 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bike-web]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/05/15-15:46 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/05/15-15:46 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 6 ms
+2019/05/15-15:47 [http-nio-8082-exec-8] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=12345678930, password=123123, name=null, portrait=null, money=null, email=, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:47 [http-nio-8082-exec-8] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/05/15-15:47 [http-nio-8082-exec-8] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/05/15-15:47 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==>  Preparing: insert into tb_user (phone,password,email) values (?,?,?) 
+2019/05/15-15:47 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==> Parameters: 12345678930(String), 123123(String), (String)
+2019/05/15-15:47 [http-nio-8082-exec-8] ERROR com.example.bikeweb.service.UserService- 用户已存在
+2019/05/15-15:47 [http-nio-8082-exec-9] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=12345678950, password=123123, name=null, portrait=null, money=null, email=, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:47 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==>  Preparing: insert into tb_user (phone,password,email) values (?,?,?) 
+2019/05/15-15:47 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==> Parameters: 12345678950(String), 123123(String), (String)
+2019/05/15-15:47 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.insert- <==    Updates: 1
+2019/05/15-15:47 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- ==>  Preparing: select max(id) as id from tb_user 
+2019/05/15-15:47 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- ==> Parameters: 
+2019/05/15-15:47 [http-nio-8082-exec-9] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- <==      Total: 1
+2019/05/15-15:47 [http-nio-8082-exec-1] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-15:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-15:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-15:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-15:47 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-15:47 [http-nio-8082-exec-1] ERROR com.example.bikeweb.controller.UserAccess- 密码不正确
+2019/05/15-15:47 [http-nio-8082-exec-2] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=1234567, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:47 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:47 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-15:47 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-15:47 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-15:47 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-15:47 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-15:47 [http-nio-8082-exec-2] ERROR com.example.bikeweb.controller.UserAccess- 密码不正确
+2019/05/15-15:49 [http-nio-8082-exec-8] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=22222222222, password=123123, name=null, portrait=null, money=null, email=, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:49 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==>  Preparing: insert into tb_user (phone,password,email) values (?,?,?) 
+2019/05/15-15:49 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert- ==> Parameters: 22222222222(String), 123123(String), (String)
+2019/05/15-15:49 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert- <==    Updates: 1
+2019/05/15-15:49 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- ==>  Preparing: select max(id) as id from tb_user 
+2019/05/15-15:49 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- ==> Parameters: 
+2019/05/15-15:49 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.insert!selectKey- <==      Total: 1
+2019/05/15-15:49 [http-nio-8082-exec-10] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=22222222222, password=123123, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 0(Long)
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 0
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 22222222222(String)
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 69(Long)
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 69(Long)
+2019/05/15-15:49 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-7] ERROR com.example.bikeweb.controller.UserAccess- UserDto(id=null, phone=15988972777, password=123456, name=null, portrait=null, money=null, email=null, age=null, gender=null, permission=null, usednum=null, costsum=null)
+2019/05/15-15:50 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==>  Preparing: select * from tb_user where phone = ? 
+2019/05/15-15:50 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- ==> Parameters: 15988972777(String)
+2019/05/15-15:50 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserByPhone- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:50 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:50 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:50 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:50 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-2] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-6] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=4, phone=null, password=null, name=章珉源, portrait=null, money=null, email=1341333432@qq.com, age=23, gender=0, permission=null, usednum=null, costsum=null)
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,name=? ,email=? ,age=? ,gender=? where id=? 
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), 章珉源(String), 1341333432@qq.com(String), 23(Integer), 0(Integer), 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-15:50 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:50 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:50 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-3] INFO  com.example.bikeweb.controller.UserAccess- UserDto(id=4, phone=null, password=123123, name=章珉源, portrait=null, money=null, email=1341333432@qq.com, age=23, gender=0, permission=null, usednum=null, costsum=null)
+2019/05/15-15:50 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,password=? ,name=? ,email=? ,age=? ,gender=? where id=? 
+2019/05/15-15:50 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), 123123(String), 章珉源(String), 1341333432@qq.com(String), 23(Integer), 0(Integer), 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-3] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:50 [http-nio-8082-exec-6] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:51 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-15:51 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 123456789(String)
+2019/05/15-15:51 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 1
+2019/05/15-15:51 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-15:51 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 111111111(String)
+2019/05/15-15:51 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 0
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==>  Preparing: select * from tb_charge where number = ? 
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- ==> Parameters: 1111111111(String)
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.ChargeDao.getChargeByNumber- <==      Total: 1
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==>  Preparing: update tb_user set id=? ,phone=? ,password=? ,name=? ,email=? ,money=? ,age=? ,gender=? ,permission=? where id=? 
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- ==> Parameters: 4(Long), 15988972777(String), 123123(String), 章珉源(String), 1341333432@qq.com(String), 1018.0(Double), 23(Integer), 0(Integer), 1(Integer), 4(Long)
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.UserDao.updateUser- <==    Updates: 1
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.ChargeDao.useCharge- ==>  Preparing: update tb_charge set id=?, validity=1, user_id=? where id=? 
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.ChargeDao.useCharge- ==> Parameters: 2(Long), 4(Long), 2(Long)
+2019/05/15-15:51 [http-nio-8082-exec-7] DEBUG com.example.bikeweb.Dao.ChargeDao.useCharge- <==    Updates: 1
+2019/05/15-15:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==>  Preparing: select * from tb_user where id = ? 
+2019/05/15-15:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- ==> Parameters: 4(Long)
+2019/05/15-15:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUserById- <==      Total: 1
+2019/05/15-15:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==>  Preparing: select count(*) as A,sum(cost) as B from tb_record where user_id =? and eGps is not null and UNIX_TIMESTAMP(bTime)>(UNIX_TIMESTAMP(utc_timestamp())-576000) 
+2019/05/15-15:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- ==> Parameters: 4(Long)
+2019/05/15-15:51 [http-nio-8082-exec-5] DEBUG com.example.bikeweb.Dao.UserDao.getUsedCount- <==      Total: 1
+2019/05/15-15:51 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-15:51 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-15:51 [http-nio-8082-exec-10] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 16
+2019/05/15-15:52 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- ==>  Preparing: select * from tb_bike where number = ? 
+2019/05/15-15:52 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- ==> Parameters: 1000000011(String)
+2019/05/15-15:52 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.getBikeByNumber- <==      Total: 1
+2019/05/15-15:52 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- ==>  Preparing: update tb_bike set id=? ,status=? where id=? 
+2019/05/15-15:52 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- ==> Parameters: 3(Long), 1(Integer), 3(Long)
+2019/05/15-15:52 [http-nio-8082-exec-1] DEBUG com.example.bikeweb.Dao.BikeDao.updateBike- <==    Updates: 1
+2019/05/15-15:52 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==>  Preparing: select * from tb_bike where status=0 order by number 
+2019/05/15-15:52 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- ==> Parameters: 
+2019/05/15-15:52 [http-nio-8082-exec-8] DEBUG com.example.bikeweb.Dao.BikeDao.getBikes- <==      Total: 15
+2019/05/15-15:55 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/05/15-15:55 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/05/15-15:55 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
